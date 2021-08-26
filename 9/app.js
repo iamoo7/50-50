@@ -1,5 +1,6 @@
 const jokeEl = document.querySelector('.joke')
 const jokeBtn = document.querySelector('.joke_btn')
+let myAudio = document.querySelector('#audio')
 
 
 generatejoke()
@@ -8,6 +9,7 @@ jokeBtn.addEventListener('click', generatejoke)
 
 
 function generatejoke() {
+  myAudio.play()
     const config = {
         headers: {
             'Accept': 'application/json'
