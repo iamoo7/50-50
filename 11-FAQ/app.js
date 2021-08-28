@@ -1,8 +1,12 @@
-const hover = document.querySelector('#first')
-const first = document.querySelector('#first_q')
-const paraF = document.querySelector('#first_para')
+const toggle = document.querySelectorAll('.question')
 
-hover.addEventListener('click', () =>{
-    first.classList.toggle('highlight')
-    paraF.classList.toggle('show')
-})
+
+toggle.forEach(toggle => {
+    toggle.addEventListener('click', () =>{
+        toggle.classList.toggle('highlight')
+        console.log(toggle)
+    })
+}
+    
+
+)

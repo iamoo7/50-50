@@ -9,7 +9,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 52px 160px;
-  margin-bottom: 124px;
+  margin-bottom: 100px;
 }
 
 .header .nav {
@@ -83,7 +83,6 @@ body {
   letter-spacing: 0.07em;
 
   color: #11142d;
-  margin-bottom: 36px;
 }
 
 .questions {
@@ -102,27 +101,33 @@ body {
   background: white;
 }
 
+.question:active {
+  transform: translateY(0);
+  filter: none;
+}
+
 .question:hover {
   transform: translateY(-2px);
   cursor: pointer;
   filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.16));
 }
 
-.question p {
+.question h1 {
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
 }
 
-.question .highlight {
+.question.highlight h1 {
   color: #088aff;
   font-weight: bold;
   font-size: 18px;
+  text-align: left;
 }
 
-.question .para.show {
+.question.highlight .para {
   width: 800px;
   font-weight: 500;
   font-size: 16px;
