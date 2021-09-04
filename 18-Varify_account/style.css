@@ -1,0 +1,239 @@
+/* ###########################################################
+########################################################### */
+
+/* CSS Reset code */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "poppins";
+  background: #f7f9fd;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 0.6px solid #b8b8b8;
+  box-sizing: border-box;
+  box-shadow: 0px 90px 160px -4px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 40px;
+  align-items: center;
+}
+
+.nav_button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  font-size: 24px;
+  padding: 6px 10px;
+  border: 1.4px solid #b9b9b9;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.illustration {
+  margin-bottom: 32px;
+}
+
+.hero_text {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.hero_text h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #101010;
+  margin-bottom: 6px;
+}
+
+.hero_text p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7e7e7e;
+}
+
+.email_change {
+  background: #ffffff;
+  border: 0.55443px solid #d5d5d5;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 8px;
+  margin-bottom: 36px;
+}
+
+#change_email {
+  display: inline-block;
+  background: #ffffff;
+  border: 2px solid #0263e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 8px 16px;
+  /* font */
+  font-weight: 600;
+  font-size: 12.9367px;
+  line-height: 19px;
+  color: #0263e0;
+  margin-left: 24px;
+  transition: 0.2s ease;
+}
+
+#change_email:hover {
+  color: white;
+  cursor: pointer;
+  background: #0263e0;
+}
+
+#email {
+  margin-left: 12px;
+  color: #101010;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+
+.number_input {
+  border: 0.6px solid #b9b9b9;
+  box-sizing: border-box;
+  border-radius: 12px;
+  width: 76px;
+  height: 72px;
+  padding: 24px;
+  margin: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #101010;
+}
+
+inpu:focus-visible,
+input:active {
+  outline-style: none;
+}
+
+.send_btn {
+  width: 100%;
+}
+
+.btn_primary {
+  width: 100%;
+  background: #f2f2f2;
+  border-radius: 12px;
+  padding: 23px;
+  font-size: 18px;
+  color: #9b9b9b;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.btn_primary:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="./Resources/icons8-approval-100.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="panel">
+      <div class="nav_button">
+        <i class="uil uil-arrow-left icon" id="back"></i>
+        <i class="uil uil-times icon" id="close"></i>
+      </div>
+      <div class="illustration">
+        <img src="./Resources/Illustration.png" alt="" />
+      </div>
+      <div class="hero_text">
+        <h1>Check your Email</h1>
+        <p>We have sent you the code on this email</p>
+      </div>
+      <div class="email_change">
+        <span id="email">ns******@gmail.com</span>
+        <span id="change_email">Change</span>
+      </div>
+
+      <div class="inputs">
+        <input type="text" class="number_input" />
+        <input type="text" class="number_input" />
+        <input type="text" class="number_input" />
+        <input type="text" class="number_input" />
+        <input type="text" class="number_input" />
+      </div>
+      <div class="send_btn">
+        <button class="btn_primary">
+          Resend Code - <span id="timer">60</span> sec.
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -27,3 +27,4 @@ submit.addEventListener('click', () =>{
     result.style.display = 'flex'
     panel.style.display = 'none'
 })
+
