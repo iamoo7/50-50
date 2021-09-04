@@ -99,3 +99,16 @@ i:hover {
   transform: scale(0.98);
   cursor: pointer;
 }
+
+.card.inactive:hover {
+  box-shadow: none;
+  cursor: default;
+}
+
+#submitted {
+  display: none;
+}
+
+.active #submitted {
+  display: flex;
+}
