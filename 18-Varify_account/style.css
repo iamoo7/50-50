@@ -129,6 +129,7 @@ body {
 
 .icon:hover {
   cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .illustration {
@@ -214,9 +215,14 @@ body {
   color: #101010;
 }
 
-inpu:focus-visible,
-input:active {
-  outline-style: none;
+textarea:focus,
+input:focus {
+  outline: none;
+  border: #0263e0 2px solid;
+}
+
+.number_input:hover {
+  border: #0263e0 1px solid;
 }
 
 .send_btn {
@@ -234,6 +240,17 @@ input:active {
   transition: 0.2s ease;
 }
 
-.btn_primary:hover {
+.btn_primary.resend_code {
+  width: 100%;
+  background: #0263e0;
+  border-radius: 12px;
+  padding: 23px;
+  font-size: 18px;
+  color: #ffffff;
+  border: none;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.btn_primary.resend_code:hover {
   cursor: pointer;
 }
