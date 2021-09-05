@@ -158,7 +158,7 @@ body {
 
 .email_change {
   background: #ffffff;
-  border: 0.55443px solid #d5d5d5;
+  border: 0.8px solid #d5d5d5;
   box-sizing: border-box;
   border-radius: 12px;
   padding: 8px;
@@ -213,16 +213,23 @@ body {
   font-size: 20px;
   line-height: 30px;
   color: #101010;
+  text-align: center;
+}
+.number_input::-webkit-outer-spin-button,
+.number_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number_input:valid {
+  border: #0263e0 1.4px solid;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
 }
 
 textarea:focus,
 input:focus {
   outline: none;
-  border: #0263e0 2px solid;
-}
-
-.number_input:hover {
-  border: #0263e0 1px solid;
+  border: #0263e0 1.4px solid;
 }
 
 .send_btn {
