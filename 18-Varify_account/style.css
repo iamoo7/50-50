@@ -209,10 +209,10 @@ body {
   height: 72px;
   padding: 24px;
   margin: 12px;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 32px;
   line-height: 30px;
-  color: #101010;
+  color: #606060;
   text-align: center;
 }
 .number_input::-webkit-outer-spin-button,
