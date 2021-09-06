@@ -189,3 +189,8 @@ span {
 .tasks.active {
   display: block;
 }
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+}
