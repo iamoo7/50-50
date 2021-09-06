@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 608px;
+}
+
+/* Hero text */
+
+h1 {
+  font-weight: bold;
+  font-size: 10rem;
+  text-align: center;
+  color: rgb(179, 131, 226);
+  margin-bottom: 48px;
+}
+
+/* Hero text */
+
+/* Navigation styling */
+
+.navigation {
+  width: 100%;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+nav {
+  height: 100%;
+  padding: 2px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333333;
+  position: relative;
+  padding: 15px 36px;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+/* bottom border */
+.nav_border {
+  position: absolute;
+  bottom: -2px;
+  background: #2f80ed;
+  border-radius: 4px 4px 0px 0px;
+  height: 4px;
+  width: 100%;
+  left: 50%;
+  display: none;
+  transform: translateX(-50%);
+}
+
+.nav_border.active {
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  background: #2f80ed;
+  border-radius: 4px 4px 0px 0px;
+  height: 4px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Navigation styling ends */
+
+/* form */
+
+form {
+  width: 100%;
+}
+
+.main_action {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+/* Main input */
+
+#main_input {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  padding: 20px 12px;
+  font-size: 14px;
+  color: #828282;
+  margin-right: 24px;
+  background: white;
+}
+
+/* button styling */
+.btn_primary {
+  background: #2f80ed;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+  border-radius: 12px;
+  padding: 20px 40px;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn_primary:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background: #216dcf;
+}
+
+.btn_primary:active {
+  transform: scale(0.98);
+}
+
+/* Main input ends */
+
+/* task list styling */
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.tasks ul {
+  margin: 0;
+  padding: 0px;
+}
+
+/* checkbox styling */
+.box {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 4px;
+  flex-grow: 0;
+  margin: 14px 8px 14px 0;
+}
+
+span {
+  flex-grow: 1;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+
+/* tasks  */
+
+.tasks {
+  display: none;
+}
+
+/* by default all tasks wil be hidden */
+
+/* active class */
+
+.tasks.active {
+  display: block;
+}
