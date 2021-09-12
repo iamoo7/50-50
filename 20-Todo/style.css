@@ -96,13 +96,10 @@ nav ul li:hover {
 
 /* form */
 
-form {
-  width: 100%;
-}
-
 .main_action {
   display: flex;
   margin-bottom: 24px;
+  width: 100%;
 }
 
 /* Main input */
@@ -130,7 +127,7 @@ form {
   border: none;
   font-size: 14px;
   font-weight: 600;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 }
 
 .btn_primary:hover {
@@ -146,16 +143,18 @@ form {
 /* Main input ends */
 
 /* task list styling */
-.task {
+.tasks {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-left: 8px;
+  justify-content: start;
+  width: 100%;
 }
 
-.tasks ul {
-  margin: 0;
-  padding: 0px;
+.task {
+  display: flex;
+  align-items: center;
 }
 
 /* checkbox styling */
@@ -191,6 +190,7 @@ span {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 10px;
+  margin-top: 40px;
 }

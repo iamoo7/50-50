@@ -32,7 +32,7 @@ btnPrim.addEventListener('click', () =>{
 function resetBtn(){
     i = 60
     btnPrim.classList.remove('resend_code')
-    btnPrim.innerHTML = `Resend Code - <span id="timer">60</span> sec.`
+    btnPrim.innerHTML = `Resend Code - <span id=${"timer"}>60</span> sec.`
     
 }
 
