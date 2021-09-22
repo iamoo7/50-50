@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #ffb347, #ffcc33);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.phone {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid white;
+  border-radius: 12px;
+  height: 600px;
+  width: 340px;
+  box-shadow: 0px 3.2px 5.1px -15px rgba(0, 0, 0, 0.028),
+    0px 7.8px 12.4px -15px rgba(0, 0, 0, 0.04),
+    0px 14.7px 23.3px -15px rgba(0, 0, 0, 0.05),
+    0px 26.1px 41.5px -15px rgba(0, 0, 0, 0.06),
+    0px 48.9px 77.7px -15px rgba(0, 0, 0, 0.072),
+    0px 117px 186px -15px rgba(0, 0, 0, 0.1);
+}
+
+.phone .content {
+  opacity: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 60px);
+  transition: opacity 0.4s ease;
+}
+
+.phone .content.show {
+  opacity: 1;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
+}
+
+nav ul {
+  background-color: white;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  align-items: center;
+}
+
+nav li {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li p {
+  display: block;
+  font-size: 12px;
+  margin: 2px 0;
+}
+nav ul li:hover,
+nav ul li.active {
+  color: #ffcc33;
+}
