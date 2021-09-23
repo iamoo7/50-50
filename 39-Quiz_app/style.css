@@ -67,6 +67,10 @@ input[type="radio"] {
   margin-right: 20px;
 }
 
+input[type="radio"]:hover {
+  cursor: pointer;
+}
+
 label {
   font-weight: 500;
   font-size: 16px;
@@ -87,7 +91,7 @@ button {
   transition: all 0.2s ease-in-out;
 }
 
-.btn:hover {
+button:hover {
   background-color: #37435c;
   cursor: pointer;
 }
