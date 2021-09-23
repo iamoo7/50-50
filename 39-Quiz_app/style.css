@@ -43,6 +43,7 @@ body {
 .option {
   display: flex;
   align-items: center;
+  width: 500px;
   justify-content: start;
   padding: 16px 14px;
   border: 1.41628px solid #e0e2e9;
