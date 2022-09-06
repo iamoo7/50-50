@@ -89,6 +89,7 @@ body {
   max-width: 1170px;
   width: 100%;
   margin: 2px auto;
+  transition: all 0.3s ease;
 }
 
 .question {
@@ -99,6 +100,7 @@ body {
   margin-bottom: 14px;
   transition: 0.3s ease-in-out;
   background: white;
+  transition: all 0.3s ease;
 }
 
 .question:active {
